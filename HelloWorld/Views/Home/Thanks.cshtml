@@ -1,11 +1,16 @@
 ﻿@model HelloWorld.Models.GuestResponse
 
-@{
-    Layout = null;
-}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<style>
+    .btn a {
+        color: white;
+        text-decoration: none;
+    }
 
-<!DOCTYPE html>
-
+    body {
+        background-color: #f1f1f1;
+    }
+</style>
 <h1>Thank you, @Model.Name</h1>
 
     @if (Model.WillAttend == true)
@@ -17,6 +22,7 @@
         @:Sorry you can't make it.
 }
 
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />

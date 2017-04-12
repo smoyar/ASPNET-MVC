@@ -1,0 +1,54 @@
+﻿@model HelloWorld.Models.Product[]
+
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+
+@if (Model.Length > 0)
+{
+    <table>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@string.Format($"{product.Price:C}")</td>
+                <td>@string.Format($"{product.ProductCount} items")</td>
+                <td>
+                    @if (product.ProductCount == 0)
+                    {
+                        @: Out of Stock
+                    }
+                    else if (product.ProductCount == 1)
+                    {
+                        @: Low Stock
+                    }
+                    else
+                    {
+                        <p>@string.Format($"{product.ProductCount} items");</p>
+                    }
+
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h2>No product data found.</h2>
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Products</title>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

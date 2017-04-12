@@ -1,0 +1,43 @@
+﻿@model Homework1.Models.BirthdayCard
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<style>
+    .btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #f1f1f1;
+    }
+</style>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Birthday Card</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        {
+            <div>
+                <h1 class="btn-success">Birthday Card Generator</h1>
+                <h2>Send a birthday card!</h2>
+                <p><label>From</label>@Html.TextBoxFor(t => t.Sender, new { @class = "form-control", maxlength = 30, style = "width:200px;" }) </p>
+                <p><label>To</label> @Html.TextBoxFor(t => t.Addressee, new { @class = "form-control", maxlength = 30, style = "width:200px;" })</p>
+                <p><label>Message</label>@Html.TextAreaFor(t=> t.Message, new { @class = "form-control", maxlength = 200, style = "width: 400px; height: 200px;"})</p>
+                <input type="submit" value="Submit Card" />               
+            </div>
+        }
+    }
+</body>
+
+</html>

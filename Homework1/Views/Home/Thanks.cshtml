@@ -1,0 +1,33 @@
+﻿@model Homework1.Models.BirthdayCard
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<style>
+    .btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #f1f1f1;
+    }
+</style>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SendCard</title>
+</head>
+<body>
+    <div>
+        <h1 class="btn-success">Birthday Card Generator</h1>
+        <h2 class="btn-primary" >Thank you, @String.Format(Model.Sender)</h2>
+        <h3>Your message has been sent to @Model.Addressee</h3>
+        <p class="table-hover"><label>Message sent: </label>@Model.Message</p>
+    </div>
+</body>
+</html>
