@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!-- source for the javascript functionality -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- if you remove the .min of the source above you will be able to see the code cleaner -->
+
+    <!-- ------------------------------------------------------------------- -->
+    <!--<script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide(); alert('hello');
+            });//when the document is ready, find the paragraph p and when it's clicked hide it,
+            //showing you a hello alert
+        });
+    </script>-->
+    
+    <!-- ------------------------------------------------------------------- -->
+    <!-- better way to do it step by step -->
+    <script>
+    function hideparagraph() {
+        $(this).hide()
+        alert('hello')
+    }
+
+    function registeronparagraphclick() {
+        $("p").click(hideparagraph)
+    }
+
+    $(document).ready(registeronparagraphclick)
+    </script>
+    <!-- ------------------------------------------------------------------- -->
+
+</head>
+<body>
+
+    <p>if you click on me, i will disappear.</p>
+    <p>click me away!</p>
+    <p>click me too!</p>
+
+</body>
+</html>

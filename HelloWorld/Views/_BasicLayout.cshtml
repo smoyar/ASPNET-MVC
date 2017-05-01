@@ -10,5 +10,13 @@
     <div style="padding:20px; border: solid medium black; font-size: 20pt">
         @RenderBody()
     </div>
+    <div>
+        @if (Session != null && Session["User"] != null)
+        {
+            var user = (HelloWorld.Models.User)Session["User"];
+            <p>@User.Identity.Name logged in</p>
+            <p>@user.Email</p>
+        }        
+    </div>
 </body>
 </html>

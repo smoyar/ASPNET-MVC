@@ -1,0 +1,10 @@
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\SchoolEF.exe.config
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\SchoolEF.exe
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\SchoolEF.pdb
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\EntityFramework.dll
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\EntityFramework.xml
+C:\source\ASPNET-MVC\SchoolEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\source\ASPNET-MVC\SchoolEF\obj\Debug\SchoolEF.csprojResolveAssemblyReference.cache
+C:\source\ASPNET-MVC\SchoolEF\obj\Debug\SchoolEF.exe
+C:\source\ASPNET-MVC\SchoolEF\obj\Debug\SchoolEF.pdb
